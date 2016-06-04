@@ -1,0 +1,3 @@
+
+
+libavahi-compat-libdnssd-dev

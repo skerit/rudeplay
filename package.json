@@ -1,0 +1,33 @@
+{
+  "name": "rudeplay",
+  "description": "Yet another node.js airplay server",
+  "version": "0.1.0-alpha",
+  "author": "Jelle De Loecker <jelle@develry.be>",
+  "keywords": [
+    "raop",
+    "airtunes",
+    "airplay",
+    "rtsp",
+    "server",
+    "audio"
+  ],
+  "dependencies": {
+    "libalac": "~0.1.2",
+    "node-rsa": "~0.3.2",
+    "protoblast": "~0.2.1",
+    "sdp-transform": "~1.6.2"
+  },
+  "optionalDependencies": {
+    "mdns": "~2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skerit/rudeplay.git"
+  },
+  "main": "lib/rudeplay.js",
+  "license": "GPLv3",
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "private": true
+}
