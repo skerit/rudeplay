@@ -1,7 +1,7 @@
 {
   "name": "rudeplay",
   "description": "Yet another node.js airplay server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Jelle De Loecker <jelle@develry.be>",
   "keywords": [
     "raop",
