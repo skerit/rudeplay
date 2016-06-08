@@ -1,4 +1,4 @@
-## 0.1.1 (WIP)
+## 0.1.1 (2016-06-08)
 
 * Fixed 'main' entry in package.json pointing to the wrong file
 * Transmission requests are now sent from the TCP control server socket,
