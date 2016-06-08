@@ -45,8 +45,33 @@ var options = {
 	port    : 5000,
 
 	// Defaults to a random mac address
-	mac     : '4e:f8:ce:31:3b:21'
+	mac     : '4e:f8:ce:31:3b:21',
+
+	// Maximum time allowed to wait for a retransmit
+	// Fastest I've seen was 2ms, slowest +/400
+	// Sometimes, it doesn't come at all.
+	retransmit_timeout : 100
 };
 
 var server = new Rudeplay();
 ```
+
+## Retransmits
+
+The reason RAOP/Airtunes/Airplay/... is so fast, is because it uses UDP packets to send audio data.
+UDP is a connection-less protocol. It just sends the packet, but doesn't know (or care) if it arrives.
+
+That's why the data packets Airplay clients send start with a sequence number.
+If something doesn't seem to arrive, an Airplay server creates a "retransmit" request for that packet and waits for it.
+
+This can be why Airplay sometimes "drops out" now and again:
+too much data getting lost and/or too much waiting for retransmitted packages.
+
+Retransmits are normally quite fast: the server can create a request, send it out,
+and receive a response in 2ms (that's the fastest I've seen so far)
+
+But sometimes it takes a lot longer than that. And sometimes, it just doesn't come at all.
+
+In rudeplay you can set the retransmit timeout, so that it doesn't wait too long for packets and cause more dropouts.
+It's set at 100ms by default, you can lower it if you don't mind to miss some data.
+You'll hardly notice a single packet going missing, anyway.

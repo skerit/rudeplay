@@ -25,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/skerit/rudeplay.git"
   },
-  "main": "lib/rudeplay.js",
+  "main": "lib/init.js",
   "license": "GPLv3",
   "engines": {
     "node": ">=4.2.0"
