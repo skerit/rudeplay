@@ -1,6 +1,8 @@
 ## 0.1.2 (WIP)
 
 * Add temporary wrap-around fix
+* Wait for initial sync packet to start playing audio
+* Actually sync the audio
 
 ## 0.1.1 (2016-06-08)
 
