@@ -4,7 +4,7 @@ Yet another node.js rtsp/airtunes/airplay server.
 
 ## What is this?
 
-This server is meant to receive audio/video coming from Apple devices, or other emulated Airplay clients.
+This server is meant to receive audio/video coming from Apple devices, or other emulated Airplay clients. It'll play any received audio data through the `speaker` module.
 
 ## What is AirPlay?
 

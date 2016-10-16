@@ -1,4 +1,4 @@
-## 0.1.2 (WIP)
+## 0.1.2 (2016-10-16)
 
 * Add temporary 'wrap-around sequence number' fix
 * Wait for initial sync packet to start playing audio
