@@ -1,8 +1,10 @@
 ## 0.1.2 (WIP)
 
-* Add temporary wrap-around fix
+* Add temporary 'wrap-around sequence number' fix
 * Wait for initial sync packet to start playing audio
 * Actually sync the audio
+* Fix decryption bug for node >=6.0.0
+* Add software volume support
 
 ## 0.1.1 (2016-06-08)
 
