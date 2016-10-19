@@ -1,5 +1,7 @@
 ## 0.1.3 (WIP)
 
+* Added `destroy` method
+
 ## 0.1.2 (2016-10-16)
 
 * Add temporary 'wrap-around sequence number' fix
