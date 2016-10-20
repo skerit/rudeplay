@@ -1,6 +1,8 @@
-## 0.1.3 (WIP)
+## 0.2.0 (WIP)
 
 * Added `destroy` method
+* Added `Client`, split up into Server and Client namespaces
+* The `Server` constructor is no longer exported, in favor of the Rudeplay namespace
 
 ## 0.1.2 (2016-10-16)
 
