@@ -1,7 +1,7 @@
 {
   "name": "rudeplay",
   "description": "Yet another node.js airplay server",
-  "version": "0.1.3-alpha",
+  "version": "0.2.0-alpha",
   "author": "Jelle De Loecker <jelle@develry.be>",
   "keywords": [
     "raop",
@@ -12,12 +12,13 @@
     "audio"
   ],
   "dependencies": {
-    "ipaddr.js"      : "~1.2.0",
-    "libalac"        : "~0.1.2",
-    "node-forge"     : "~0.6.43",
-    "protoblast"     : "~0.3.2",
-    "sdp-transform"  : "~1.6.2",
-    "speaker"        : "~0.3.0"
+    "ipaddr.js"       : "~1.2.0",
+    "libalac"         : "~0.1.2",
+    "mediaconversion" : "~0.1.0",
+    "node-forge"      : "~0.6.43",
+    "protoblast"      : "~0.3.2",
+    "sdp-transform"   : "~1.6.2",
+    "speaker"         : "~0.3.0"
   },
   "optionalDependencies": {
     "mdns": "~2.3.3"

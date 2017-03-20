@@ -53,7 +53,40 @@ var options = {
 	retransmit_timeout : 100
 };
 
-var server = new Rudeplay();
+var server = new Rudeplay.Server.Server();
+```
+
+## Client
+
+A client is currently being added, though it doesn't support retransmits yet and can only stream to a Rudeplay server:
+
+```javascript
+var Rudeplay = require('rudeplay'),
+    fs       = require('fs');
+
+var client = new Rudeplay.Client.Client();
+
+client.on('device', function onDevice(device) {
+
+	var session;
+
+	// Check for the wanted device
+	if (device.name.indexOf('udeplay') == -1) {
+		return;
+	}
+
+	// Create a session, make it play the sound local, too
+	session = device.createSession({play_local: true});
+
+	// Wait for the session to be ready, takes about 100ms
+	session.on('ready', function onReady() {
+
+		// Stream a raw pcm file
+		var file = fs.createReadStream('sound.raw');
+
+		session._stream(file);
+	});
+});
 ```
 
 ## Retransmits
