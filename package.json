@@ -12,13 +12,13 @@
     "audio"
   ],
   "dependencies": {
-    "ipaddr.js"       : "~1.2.0",
-    "libalac"         : "~0.1.2",
-    "mediaconversion" : "~0.1.0",
-    "node-forge"      : "~0.6.43",
-    "protoblast"      : "~0.3.2",
-    "sdp-transform"   : "~1.6.2",
-    "speaker"         : "~0.3.0"
+    "ipaddr.js": "~1.2.0",
+    "libalac": "~0.1.2",
+    "mediaconversion": "~0.1.0",
+    "node-forge": "~0.7.4",
+    "protoblast": "~0.3.2",
+    "sdp-transform": "~1.6.2",
+    "speaker": "~0.3.0"
   },
   "optionalDependencies": {
     "mdns": "~2.3.3"
